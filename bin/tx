@@ -6,5 +6,6 @@ if tmux info &> /dev/null; then
 		$TERMINAL -e tmux a
 	fi
 else
+    tmux
     $TERMINAL -e tmux a
 fi
