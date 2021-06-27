@@ -1,0 +1,2 @@
+setxkbmap -option caps:none
+xmodmap -e 'keycode 66 = backslash Caps_Lock'

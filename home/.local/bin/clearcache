@@ -1,0 +1,27 @@
+#!/bin/sh
+
+rm -r ~/.cache/composer
+rm -r ~/.cache/dmenu_run
+rm -r ~/.cache/gstreamer-1.0
+rm -r ~/.cache/mesa_shader_cache
+rm -r ~/.cache/paru
+rm -r ~/.cache/phpactor
+rm -r ~/.cache/sxiv
+rm -r ~/.cache/typescript
+rm -r ~/.cache/zellij
+rm -r ~/intelephense
+rm -r ~/.mongodb
+rm -r ~/.npm
+
+rm -r ~/.config/dconf
+rm -r ~/.config/htop
+
+# rm -r ~/.cache
+# rm -rf ~/.mongodb
+# rm -rf .pki
+# rm -r intelephense
+# rm -rf .swt
+# rm -r ~/.local/lib
+# rm -r ~/.local/share/warp
+# rm -r ~/.local/share/composer
+# rm -r ~/.local/share/zathura

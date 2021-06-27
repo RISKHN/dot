@@ -1,0 +1,5 @@
+clipmenud &
+remaps
+xset b off
+
+exec dwm

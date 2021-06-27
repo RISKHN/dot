@@ -1,0 +1,7 @@
+home/dox/*
+home/dwl/*
+home/msx/*
+home/pix/*
+home/vid/*
+
+!home/dwl/pkg

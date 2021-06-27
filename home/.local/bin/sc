@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ ! -d /tmp/ss ]; then
+    mkdir /tmp/ss
+fi
+
+file_name=/tmp/ss/$(date +'%F-%T').png
+
+menu="
+window
+selection
+"
+
+choice=$(echo -e "$menu" | dmenu -i -p "select screenshot")
+case "$choice" in
+    window) import -window root $file_name;;
+    selection) import $file_name;;
+esac

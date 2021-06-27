@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DAY=$(date +'%a')
+TIME=$(date +'%R')
+DATE=$(date +'%d/%m/%y')
+BAT=$(cat /sys/class/power_supply/BAT0/capacity)%
+TEMP=$(sensors | grep CPU | tr -d "CPU: \t")
+
+STATUS="$(cat /sys/class/power_supply/BAT0/status)"
+[[ $STATUS == "Discharging" ]] && EL="NC" || EL="CG"
+
+echo -e "$DAY | $TIME | $DATE | $BAT $EL | $TEMP" | dmenu -c -l 1
