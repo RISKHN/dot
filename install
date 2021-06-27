@@ -1,0 +1,6 @@
+#!/bin/bash
+
+stow bin -t ~/.local/bin
+stow config -t ~/.config
+stow share -t ~/.local/share
+stow etc -t /usr/etc
