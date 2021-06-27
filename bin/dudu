@@ -1,1 +1,7 @@
-../../.local/bin/dudu
+#!/bin/sh
+filename=~/.local/share/youtube/link
+n=1
+while read line; do
+  youtube-dl -f bestvideo+bestaudio $line
+  n=$((n+1))
+done < $filename

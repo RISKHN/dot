@@ -1,1 +1,7 @@
-../../.local/bin/screenshot
+#!/bin/bash
+
+choice=$(printf "window\\nselection" | dmenu -i -p "Select screenshot")
+case "$choice" in
+    window) import -window root ~/dox/pix/ss/$(date +'%F-%T').png;;
+    selection) import ~/dox/pix/ss/$(date +'%F-%T').png;;
+esac

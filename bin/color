@@ -1,1 +1,2 @@
-../../.local/bin/color
+#!/bin/sh
+grabc | tr -d '\n' | xsel

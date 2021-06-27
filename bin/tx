@@ -1,1 +1,10 @@
-../../.local/bin/tx
+#!/bin/bash 
+if tmux info &> /dev/null; then 
+	if pgrep -x $TERMINAL &> /dev/null; then 
+		tmux new-window
+	else
+		$TERMINAL -e tmux a
+	fi
+else
+    $TERMINAL -e tmux a
+fi

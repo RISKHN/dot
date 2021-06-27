@@ -1,1 +1,13 @@
-../../.local/bin/tsv
+#!/bin/bash
+
+if [[ ! -z "$1" ]]; then
+    if pgrep $1 &> /dev/null; then 
+        echo "removing $1 from /var/service"
+        rm /var/service/$1
+    else
+        echo "adding $1 to /var/service"
+        ln -s /etc/sv/$1 /var/service
+    fi
+else 
+    echo "please insert service name"
+fi

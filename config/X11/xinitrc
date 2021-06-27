@@ -1,1 +1,8 @@
-../../.config/X11/xinitrc
+hsetroot -cover ~/dow/wp.png
+xrdb -load ~/.config/X11/xresources
+
+picom &
+clipmenud &
+remaps &
+
+exec dwm

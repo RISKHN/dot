@@ -1,1 +1,76 @@
-../../.config/zsh/.zshenv
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export QT_STYLE_OVERRIDE="adwaita-dark"
+
+export HISTSIZE=1000000 
+export SAVEHIST=1000000 
+export HISTFILE="$HOME/.cache/zsh/history"
+
+export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:="$HOME/.config"}
+export XDG_CACHE_HOME=${XDG_CACHE_HOME:="$HOME/.cache"}
+export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
+
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export CARGO_BIN="$XDG_DATA_HOME/cargo/bin"
+export ANDROID_HOME="$XDG_DATA_HOME/android"
+export GOPATH="$XDG_DATA_HOME/go"
+export NPMPATH="$XDG_DATA_HOME/npm"
+export NPMBIN="$XDG_DATA_HOME/npm/bin"
+export GOBIN="$XDG_DATA_HOME/go/bin"
+export ZPLUG="$XDG_DATA_HOME/zsh/plugins"
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql/mysql_history"
+export XAUTHORITY="$XDG_DATA_HOME/x11/Xauthority"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME/node/node_repl_history"
+export YLINK="$XDG_DATA_HOME/youtube/link"
+export _Z_DATA="$XDG_DATA_HOME/z/z"
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export ANDROID_SDK_ROOT="$XDG_DATA_HOME"/android
+export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME"/android
+export ANDROID_SDK_HOME="$XDG_DATA_HOME"/android
+export PATH="$HOME/$XDG_DATA_HOME/cargo/bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/node_modules/bin:$PATH"
+export PATH="$GOBIN:$PATH"
+export PATH="$NPMBIN:$PATH"
+export PATH="$CARGO_BIN:$PATH"
+export PATH="$PATH:/$XDG_DATA_HOME/composer/vendor/bin"
+
+export PATH="$PATH:/$XDG_CONFIG_HOME/composer/vendor/bin"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
+export XSERVERRC="$XDG_CONFIG_HOME/X11/xserverrc"
+export GIT_CONFIG="$XDG_CONFIG_HOME/git/config"
+export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
+export PASSWORD_STORE_DIR="$XDG_CONFIG_HOME/password-store"
+export NOTMUCH_CONFIG="$XDG_CONFIG_HOME"/notmuch/notmuchrc
+export NMBGIT="$XDG_DATA_HOME"/notmuch/nmbug
+export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+export ZCONF="$XDG_CONFIG_HOME/zsh"
+
+export YTFZF_HIST=1
+export YTFZF_CACHE="$XDG_CACHE_HOME"/ytfzf
+
+export SUDO_ASKPASS="dmenupass"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export SYSTEMD_EDITOR="nvim"
+export READER="zathura"
+export TERMINAL="st"
+export TERM="st-256color"
+export COLORTERM="truecolor"
+export BROWSER="firefox"
+export VIDEO="mpv"
+export IMAGE="sxiv"
+export OPENER="xdg-open"
+export PAGER="less"
+export WM="dwm"
+export WALLPAPER="$XDG_DATA_HOME"/wallpaper/wallpaper.png
+export YTFZF_PREF="18"

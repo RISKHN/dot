@@ -1,1 +1,9 @@
-../../.local/bin/sholat
+#!/usr/bin/sh
+
+data=$(cat ~/.local/share/hijri/sholat.json | jq '.data.jadwal')
+subuh=$(echo $data | jq '.subuh')
+dzuhur=$(echo $data | jq '.dzuhur')
+ashar=$(echo $data | jq '.ashar')
+maghrib=$(echo $data | jq '.maghrib')
+isya=$(echo $data | jq '.isya')
+echo "$subuh  $dzuhur  $ashar  $maghrib  $isya" | sed 's/\"//g'

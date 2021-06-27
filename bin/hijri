@@ -1,1 +1,7 @@
-../../.local/bin/hijri
+#!/usr/bin/sh
+
+data=$(curl -s http://api.aladhan.com/v1/gToH | jq '.data.hijri')
+day=$(echo $data | jq '.day')
+month=$(echo $data | jq '.month.number')
+year=$(echo $data | jq '.year')
+echo "$day/$month/$year" | sed 's/\"//g' | tee ~/.local/share/hijri/date

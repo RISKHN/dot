@@ -1,1 +1,4 @@
-../../.local/bin/pwgen
+#!/bin/sh
+
+
+date +"%s%N" | base64 | tr -d '\n' | xsel && herbe "random password generated"

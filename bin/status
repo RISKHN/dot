@@ -1,1 +1,12 @@
-../../.local/bin/status
+#!/bin/bash
+
+DAY=$(date +'%a')
+TIME=$(date +'%R')
+HIJRI=$(cat ~/.local/share/hijri/date)
+MASEHI=$(date +'%d/%m/%y')
+BAT=$(cat /sys/class/power_supply/BAT0/capacity)%
+
+STATUS="$(cat /sys/class/power_supply/BAT0/status)"
+[[ $STATUS == "Discharging" ]] && EL="NC" || EL="CG"
+
+herbe "$DAY | $TIME | $HIJRI | $MASEHI | $BAT | $EL"
