@@ -16,11 +16,9 @@ call plug#begin("~/.local/share/vim/plugged")
 	Plug 'hrsh7th/vim-vsnip-integ'
 	Plug 'nekonako/xresources-nvim'
     Plug 'prettier/vim-prettier'
+    Plug 'fatih/vim-go'
 call plug#end()
 
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
 inoremap jk <esc>
 inoremap kj <esc>
 snoremap jk <esc>
@@ -32,6 +30,6 @@ vnoremap <leader>t "+y
 nnoremap <leader><leader> <C-^> 
 vnoremap <silent>J :m '>+1<CR>gv=gv
 vnoremap <silent>K :m '<-2<CR>gv=gv " }}} 
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap {<CR> {<CR>}<ESC>O
+inoremap <expr><Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr><S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap {<CR>{<CR>}<ESC>O

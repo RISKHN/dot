@@ -1,12 +1,12 @@
 #!/bin/bash
 
 convert \
-    -font /usr/share/fonts/TTF/IBMPlexSansCondensed-Medium.ttf \
+    -font /usr/share/fonts/TTF/IBMPlexMono-Medium.ttf \
     -background black \
     -fill white \
     -size 1366x768 \
     -gravity center \
     -pointsize 24 \
-    caption:"$(sholat)" ~/.local/share/wallpaper/wallpaper.png
+    caption:"$(sholat) \n $(hijri)" ~/.local/share/wallpaper/wallpaper.png
 
 display -window root $WALLPAPER 

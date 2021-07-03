@@ -74,3 +74,4 @@ export PAGER="less"
 export WM="dwm"
 export WALLPAPER="$XDG_DATA_HOME"/wallpaper/wallpaper.png
 export YTFZF_PREF="18"
+. "/home/rns/.local/share/cargo/env"

@@ -9,4 +9,4 @@ BAT=$(cat /sys/class/power_supply/BAT0/capacity)%
 STATUS="$(cat /sys/class/power_supply/BAT0/status)"
 [[ $STATUS == "Discharging" ]] && EL="NC" || EL="CG"
 
-herbe "$DAY | $TIME | $HIJRI | $MASEHI | $BAT | $EL"
+herbe "$DAY | $TIME | $HIJRI | $MASEHI" " " "$(sholat)" " " "$BAT $EL"
