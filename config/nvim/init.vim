@@ -15,7 +15,7 @@ call plug#begin("~/.local/share/vim/plugged")
 	Plug 'hrsh7th/vim-vsnip'
 	Plug 'hrsh7th/vim-vsnip-integ'
 	Plug 'nekonako/xresources-nvim'
-    Plug 'prettier/vim-prettier'
+    Plug 'prettier/vim-prettier', { 'do': 'pnpm i' }
     Plug 'fatih/vim-go'
 call plug#end()
 
