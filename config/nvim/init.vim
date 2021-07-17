@@ -1,22 +1,16 @@
 call plug#begin("~/.local/share/vim/plugged") 
-	Plug 'neovim/nvim-lspconfig'
-	Plug 'nvim-lua/completion-nvim' 
-	Plug 'nvim-lua/popup.nvim' 
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'tpope/vim-commentary'
-	Plug 'tpope/vim-fugitive'
-	Plug 'airblade/vim-gitgutter'
-	Plug 'wakatime/vim-wakatime'
-	Plug 'vimwiki/vimwiki'
-	Plug 'itchyny/lightline.vim'
-	Plug 'mattn/emmet-vim'
-	Plug 'hrsh7th/nvim-compe'
-	Plug 'hrsh7th/vim-vsnip'
-	Plug 'hrsh7th/vim-vsnip-integ'
-	Plug 'nekonako/xresources-nvim'
-    Plug 'prettier/vim-prettier', { 'do': 'pnpm i' }
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim' 
+    Plug 'nvim-lua/popup.nvim' 
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-commentary'
+    Plug 'itchyny/lightline.vim'
     Plug 'fatih/vim-go'
+    Plug 'nekonako/xresources-nvim'
+    Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 inoremap jk <esc>
