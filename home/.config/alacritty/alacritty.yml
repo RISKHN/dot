@@ -22,7 +22,7 @@ font:
 
     style: Bold Italic
 
-  size: 10.0 #MONITOR
+  #size: 10.0 #MONITOR
   size: 7.0 #LAPTOP
 
 colors:

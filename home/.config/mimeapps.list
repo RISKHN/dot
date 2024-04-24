@@ -21,6 +21,8 @@ inode/x-empty=nvim.desktop
 text/plain=nvim.desktop
 x-scheme-handler/ferdi=ferdi.desktop
 x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_opt_dbeaver-ee_.desktop
+x-scheme-handler/eclipse+mpc x-scheme-handler/eclipse+command=_opt_dbeaver-ee_.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-SFXH50.desktop;
